@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Buttons</title>
+<style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            color: white;
+            background-color: rgb(61, 79, 104);
+            text-align: center;
+        }
+        
+        h2 {
+            margin: 10px;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.2rem;
+            font-weight: 100;
+        }
+        
+        button {
+            margin: 10px;
+            color: inherit;
+            background-color: inherit;
+        
+            border-radius: inherit;
+            box-shadow: none;
+        }
+        
+        .round-btns {
+            border-radius: 25px;
+        }
+        
+        .big-btn {
+            font-size: 1.2rem;
+            padding: 12px 40px;
+        }
+        
+        .flat-btns .big-btn {
+            background-color: #05b86b;
+            border: 2px solid #05b86b;
+        }
+        
+        .flat-btns .medium-btn {
+            background-color: #fd2728;
+            border: 2px solid #fd2728;
+        }
+        
+        .flat-btns .small-btn {
+            background-color: #0a99e2;
+            border: 2px solid #0a99e2;
+        }
+        
+        .round-btns .big-btn {
+            background-color: #f78401;
+            border: 2px solid #f78401;
+        }
+        
+        .round-btns .medium-btn {
+            background-color: #f7d404;
+            border: 2px solid #f7d404;
+        }
+        
+        .round-btns .small-btn {
+            background-color: #899799;
+            border: 2px solid #899799;
+        }
+        
+        .medium-btn {
+            font-size: 1rem;
+            padding: 7px 30px;
+        }
+        
+        .small-btn {
+            font-size: 0.8rem;
+            padding: 5px 15px;
+        }
+        
+        .flat-btns .ghost,
+        .round-btns .ghost {
+            background-color: transparent;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="flat-btns">
+            <h2>Flat</h2>
+            <button class="big-btn">Register</button>
+            <button class="medium-btn">Clear</button>
+            <button class="small-btn">Submit</button>
+        </div>
+        <div class="round-btns">
+            <h2>Round</h2>
+            <button class="big-btn">Register</button>
+            <button class="medium-btn">Clear</button>
+            <button class="small-btn">Submit</button>
+        </div>
+        <div class="flat-btns">
+            <h2>Flat Ghost</h2>
+            <button class="ghost big-btn">Register</button>
+            <button class="medium-btn ghost">Clear</button>
+            <button class="small-btn ghost">Submit</button>
+        </div>
+        <div class="round-btns">
+            <h2>Round Ghost</h2>
+            <button class="big-btn ghost">Register</button>
+            <button class="medium-btn ghost">Clear</button>
+            <button class="small-btn ghost">Submit</button>
+        </div>
+    </body>
+</html>
