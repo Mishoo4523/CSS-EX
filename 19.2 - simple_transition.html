@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<style>
+    * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.box {
+    height: 10rem;
+    width: 10rem;
+    background: red;
+}
+
+.box::before {
+    content: "";
+    display: inline-block;
+    height: 10rem;
+    width: 10rem;
+    position: relative;
+    right: 10rem;
+    background: purple;
+    animation: box-aside 0.5s forwards 0s ease-out;
+}
+
+.box:hover::before {
+    animation: box-overlap 0.5s forwards 0s ease-out;
+}
+
+@keyframes box-overlap {
+    from {
+        background: purple;
+        right: 10rem;
+    }
+
+    to {
+        background: green;
+        right: 0;
+    }
+}
+
+@keyframes box-aside {
+    from {
+        background: green;
+        right: 0;
+    }
+
+    to {
+        background: purple;
+        right: 10rem;
+    }
+}
+</style>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Simaple Transition
+        </title>
+
+        <link rel="stylesheet" href="19.2 - simple_transition.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="box"></div>
+        </div>
+    </body>
+
+</html>
